@@ -10,21 +10,50 @@
   </head>
   <body class='container'>
     <br/>
-  
+
     <div class="jumbotron" id='meetup'> </div>
 
     <script type="text/babel">
+
+      let tooManyPeople = ( people ) => {
+        return people.length < 50;
+      }
 
       let Hello = React.createClass({
 
         render() {
           return (
             <div>
-              <div>
-                <h2>
-                  Hello! React Meetup !
-                </h2>
-              </div>
+              { tooManyPeople(this.props.people)
+
+                ?
+
+                <div className='row'>
+                    { this.props.people.map( person => {
+                      return (
+                        <div className="col-sm-1">
+                          <img src={person}
+                               style={{
+                                      width: 80,
+                                      height: 80,
+                                      margin: '10px 0'
+                                      }}
+                               className="img-rounded" /> 
+                        </div>
+                      )
+                    }) }
+                </div>
+
+                :
+
+                <div>
+                  <h2>
+                    Hello! React Meetup !
+                    ('too many people')
+                  </h2>
+                </div>
+
+              }
             </div>
           );
         }
