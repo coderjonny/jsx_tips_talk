@@ -1,7 +1,7 @@
 # jsx_tips_talk
 
 React jsx tips. 
-
+  - Check out reactjs [styleguide!](https://github.com/coderjonny/react-style-guide)
   - Code sample for [Feb. React Meetup!](http://www.meetup.com/ReactLA/events/223340763/)
   - Recommend this [react chrome plugin](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 
