@@ -8,7 +8,7 @@ React jsx tips.
 Comments in jsx
 ----------
 
-```
+```javascript
     render() {
       return (
         <div>
@@ -19,7 +19,7 @@ Comments in jsx
 ```
 
 
-```
+```javascript
     render() {
       return (
         <div>
@@ -47,7 +47,7 @@ Comments in jsx
 Mapping Arrays in jsx
 ----------
 
-```
+```javascript
 //one liner
 { this.props.people.map( person => <div> {person} </div> ) }
 
@@ -71,7 +71,7 @@ Mapping Arrays in jsx
 Contitionals in jsx
 ----------
 
-```
+```javascript
 let tooMany = (people) => { this.props.people.length > 10 }
 
 { tooMany(people) && this.props.people.map( person => {
@@ -88,7 +88,7 @@ let tooMany = (people) => { this.props.people.length > 10 }
 Ternary statements in jsx
 ----------
 
-```
+```javascript
 let tooMany = (people) => { this.props.people.length > 10 }
 
 { tooMany(people)? 
